@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/main.css">
+  <title>Frontend Mentor | Pricing component</title>
+
+</head>
+<body>
+  <main class="main">
+    <article class="pricing-component">
+      <h1 class="pricing-component__heading">Our Pricing</h1>
+      <fieldset
+            class="pricing-component__toggle toggle__field"
+            aria-label="Billing frequency switcher"
+            role="radiogroup"
+          >
+            <legend class="u-sr-only">
+              Billing frequency
+            </legend>
+            <label class="toggle__label toggle__label--anually" for="anually"
+                >Annually</label>
+              <div class="toggle__wrapper">
+                <input
+                  class="toggle__input toggle__input--anually"
+                  type="radio"
+                  name="billing-frequency"
+                  id="anually"
+                  checked
+                />
+                <input
+                  class="toggle__input toggle__input--monthly"
+                  type="radio"
+                  name="billing-frequency"
+                  id="monthly"
+                />
+                <div class="toggle__bg"></div>
+                <div class="toggle__slider"></div>
+              </div>
+              <label class="toggle__label toggle__label--monthly" for="monthly"
+                >Monthly</label
+              >
+            </div>
+          </fieldset>
+
+          <ul class="pricing-component__cards-container cards-container">
+            <li>
+              <article class="card">
+                <h1 class="card__header">Basic</h1>
+                <p class="card__price"><span>&dollar;</span> 19.99</p>
+                <ul class="card__features">
+                  <li>500 GB Storage</li>
+                  <li>2 Users Allowed</li>
+                  <li>Send up to 3 GB</li>
+                </ul>
+                <button class="btn">Learn More</button>
+              </article>
+            </li>
+            <li>
+              <article class="card card--blue">
+                <h1 class="card__header">Professional</h1>
+                <p class="card__price"><span>&dollar;</span> 24.99</p>
+                <ul class="card__features">
+                  <li>1 TB Storage</li>
+                  <li>5 Users Allowed</li>
+                  <li>Send up to 10 GB</li>
+                </ul>
+                <button class="btn btn--white">Learn More</button>
+              </article>
+            </li>
+            <li>
+              <article class="card">
+                <h1 class="card__header">Master</h1>
+                <p class="card__price"><span>&dollar;</span> 39.99</p>
+                <ul class="card__features">
+                  <li>2 TB Storage</li>
+                  <li>10 Users Allowed</li>
+                  <li>Send up to 20 GB</li>
+                </ul>
+                <button class="btn">Learn More</button>
+              </article>
+            </li>
+          </ul>
+    </article>
+  </main>
+  
+</body>
+</html>

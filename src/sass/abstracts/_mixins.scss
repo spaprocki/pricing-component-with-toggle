@@ -1,0 +1,37 @@
+@mixin respond($breakpoint) {
+    @if $breakpoint == medium-screen {
+        @media (min-width: 48rem) {
+            @content;
+        }
+    }
+    @if $breakpoint == stats {
+        @media (min-width: 64rem) {
+            @content;
+        }
+    }
+    @if $breakpoint == big-screen {
+        @media (min-width: 64rem) {
+            @content;
+        }
+    }
+}
+
+@mixin flex-column-align-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin focus-styles($outline-color: currentColor, $outline-offset: 0.3125rem) {
+    &:focus,
+    :focus-visible {
+        outline-width: 0.1875rem;
+        outline-style: dashed;
+        outline-offset: $outline-offset;
+        outline-color: $outline-color;
+    }
+
+    &:focus:not(:focus-visible) {
+        outline: none;
+    }
+}

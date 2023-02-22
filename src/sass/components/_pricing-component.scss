@@ -1,0 +1,15 @@
+@use "../abstracts" as *;
+
+.pricing-component {
+    position: relative;
+    margin-top: scaleSize(4rem, 4.4375rem);
+
+    &__heading {
+        font-size: 32px;
+        line-height: 39px;
+    }
+
+    &__toggle {
+        margin-top: 40px;
+    }
+}
