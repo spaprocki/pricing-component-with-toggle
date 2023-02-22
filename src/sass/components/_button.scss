@@ -6,8 +6,8 @@
   &:visited {
     background: $color-gradient;
     display: inline-block;
-    padding: 0.75rem;
-    width: min(100% - 2 * 1.5rem, 288px);
+    padding: 12px;
+    width: min(100% - 2 * 24px, 288px);
     text-transform: uppercase;
     font-family: $default-font-stack;
     font-size: 13px;
@@ -20,17 +20,19 @@
     transition: transform 0.2s;
   }
 
-  &:active {
-    transform: scale(1.02);
-  }
+  // &:active {
+  //   transform: scale(1.02);
+  // }
 
-  &:hover {
-    background-color: $color-white;
+  &:hover,
+  &:active {
+    background: $color-white;
     color: $color-font-blue;
     border: $color-font-blue solid 1px;
+    padding: 11px;
   }
 
-  @include focus-styles($color-gradient, 5px);
+  @include focus-styles($color-font-blue, 5px);
 
   &--white {
     background: $color-white;
@@ -42,6 +44,6 @@
       border: $color-white solid 1px;
     }
 
-    @include focus-styles($color-gradient, 5px);
+    @include focus-styles($color-white, 5px);
   }
 }

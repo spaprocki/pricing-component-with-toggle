@@ -12,4 +12,30 @@
     &__toggle {
         margin-top: 40px;
     }
+
+    &__cards-container {
+        @include flex-column-align-center;
+        list-style-type: none;
+        margin-top: 80px;
+        width: 100%;
+
+        @include respond(big-screen) {
+            margin-top: 64px;
+            flex-direction: row;
+            justify-content: center;
+            width: min(100% - 2 * 24px, 1050px);
+        }
+
+        & > li {
+            width: min(100%, 350px);
+
+            &:is(:not(:first-child)) {
+                margin-top: 32px;
+
+                @include respond(big-screen) {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
 }

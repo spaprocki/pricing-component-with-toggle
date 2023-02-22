@@ -1,0 +1,75 @@
+@use "../abstracts" as *;
+
+.card {
+    @include flex-column-align-center;
+    background: $color-white;
+    width: min(100%, 350px);
+    box-shadow: 0px 20px 40px rgba(212, 210, 244, 0.5);
+    border-radius: 10px;
+    padding: 31px 29px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include respond(big-screen) {
+        padding: 31px;
+    }
+
+    &__header {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    &__price {
+        display: flex;
+        align-items: center;
+        margin-top: 24px;
+        font-size: 40px;
+        line-height: 49px;
+        color: $color-font-price;
+
+        & span {
+            font-size: 72px;
+            line-height: 71px;
+            letter-spacing: -2.16px;
+            margin-left: 7px;
+        }
+    }
+
+    &__features {
+        width: min(100% - 2 * 24px, 288px);
+        list-style-type: none;
+        margin-top: 32px;
+        border-bottom: 1px solid $color-font-heading-light;
+    }
+
+    &__feature {
+        padding: 12px;
+        text-align: center;
+        border-top: 1px solid $color-font-heading-light;
+    }
+
+    &__btn {
+        margin-top: 32px;
+    }
+
+    &--blue {
+        background: $color-gradient;
+        color: $color-white;
+
+        @include respond(big-screen) {
+            padding: 55px 31px;
+        }
+
+        & .card__price {
+            color: $color-white;
+        }
+
+        & .card__features {
+            border-color: $color-white-light;
+        }
+
+        & .card__feature {
+            border-color: $color-white-light;
+        }
+    }
+}

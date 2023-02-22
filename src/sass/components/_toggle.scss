@@ -12,6 +12,7 @@
         width: 70px;
         font-size: 15px;
         line-height: 28px;
+        color: $color-font-billing;
         cursor: pointer;
     }
 
@@ -78,13 +79,13 @@
 
         &--monthly:checked {
             & ~ .toggle__slider {
-                left: 4px;
+                left: 28px;
             }
         }
 
-        &--yearly:checked {
+        &--annually:checked {
             & ~ .toggle__slider {
-                left: 24px;
+                left: 4px;
             }
 
             & ~ .toggle__bg {
