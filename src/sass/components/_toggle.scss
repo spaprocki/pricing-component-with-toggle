@@ -9,9 +9,9 @@
     }
 
     &__label {
-        width: 70px;
-        font-size: 15px;
-        line-height: 28px;
+        width: 4.375rem;
+        font-size: 0.9375rem;
+        line-height: 1.75rem;
         color: $color-font-billing;
         cursor: pointer;
     }
@@ -19,9 +19,9 @@
     &__wrapper {
         position: relative;
         display: flex;
-        width: 56px;
-        height: 32px;
-        margin: 0 24px;
+        width: 3.5rem;
+        height: 2rem;
+        margin: 0 1.5rem;
     }
 
     &__bg {
@@ -30,18 +30,18 @@
         top: 0px;
         right: 0px;
         bottom: 0px;
-        border-radius: 15px;
+        border-radius: 0.9375rem;
         background: $color-gradient;
     }
 
     &__slider {
         position: absolute;
-        width: 24px;
-        height: 24px;
+        width: 1.5rem;
+        height: 1.5rem;
         border-radius: 50%;
         background-color: $color-white;
-        left: 4px;
-        top: 4px;
+        left: 0.25rem;
+        top: 0.25rem;
         transition: all 0.3s ease;
     }
 
@@ -79,13 +79,13 @@
 
         &--monthly:checked {
             & ~ .toggle__slider {
-                left: 28px;
+                left: 1.75rem;
             }
         }
 
         &--annually:checked {
             & ~ .toggle__slider {
-                left: 4px;
+                left: 0.25rem;
             }
 
             & ~ .toggle__bg {

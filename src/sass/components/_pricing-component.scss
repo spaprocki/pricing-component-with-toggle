@@ -5,32 +5,32 @@
     margin-top: scaleSize(4rem, 4.4375rem);
 
     &__heading {
-        font-size: 32px;
-        line-height: 39px;
+        font-size: 2rem;
+        line-height: 2.4375rem;
     }
 
     &__toggle {
-        margin-top: 40px;
+        margin-top: 2.5rem;
     }
 
     &__cards-container {
         @include flex-column-align-center;
         list-style-type: none;
-        margin-top: 80px;
+        margin-top: 5rem;
         width: 100%;
 
         @include respond(big-screen) {
-            margin-top: 64px;
+            margin-top: 4rem;
             flex-direction: row;
             justify-content: center;
-            width: min(100% - 2 * 24px, 1050px);
+            width: min(100% - 2 * 1.5rem, 65.625rem);
         }
 
         & > li {
-            width: min(100%, 350px);
+            width: min(100%, 21.875rem);
 
             &:is(:not(:first-child)) {
-                margin-top: 32px;
+                margin-top: 2rem;
 
                 @include respond(big-screen) {
                     margin-top: 0;
